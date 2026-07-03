@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { Phone, Mail, MapPin, Instagram } from "lucide-react";
-import logoAsset from "@/assets/logo.png.asset.json";
+import logoAsset from "@/assets/logo.png";
 
 export function SiteFooter() {
   return (
@@ -8,7 +8,7 @@ export function SiteFooter() {
       <div className="container mx-auto px-4 py-16 grid gap-10 md:grid-cols-4">
         <div>
           <div className="flex items-center gap-3 mb-4">
-            <img src={logoAsset.url} alt="Malermeister DMW Logo" className="h-11 w-auto object-contain" />
+            <img src={logoAsset} alt="Malermeister DMW Logo" className="h-11 w-auto object-contain" />
             <div className="font-display text-lg font-bold">Malermeister DMW</div>
           </div>
           <p className="text-sm text-anthracite-foreground/70 leading-relaxed">

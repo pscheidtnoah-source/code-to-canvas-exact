@@ -1,7 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { Phone, Menu, X } from "lucide-react";
 import { useState } from "react";
-import logoAsset from "@/assets/logo.png.asset.json";
+import logoAsset from "@/assets/logo.png";
 
 const navItems = [
   { label: "Home", href: "#home" },
@@ -19,7 +19,7 @@ export function SiteHeader() {
       <div className="bg-background/95 backdrop-blur border-b border-border">
         <div className="container mx-auto flex items-center justify-between px-4 py-4">
           <Link to="/" className="flex items-center gap-3">
-            <img src={logoAsset.url} alt="Malermeister DMW Logo" className="h-11 w-auto object-contain" />
+            <img src={logoAsset} alt="Malermeister DMW Logo" className="h-11 w-auto object-contain" />
             <div className="leading-tight">
               <div className="font-display text-lg font-bold tracking-tight text-foreground">Malermeister DMW</div>
               <div className="text-[11px] uppercase tracking-[0.18em] text-muted-foreground">Farbe · Design · Wohlgefühl</div>

@@ -7,11 +7,11 @@ import heroImg from "@/assets/hero.jpg";
 import projWohnzimmer from "@/assets/project-wohnzimmer.jpg";
 import wallBefore from "@/assets/wall-before.jpg";
 import wallAfter from "@/assets/wall-after.jpg";
-import dominikAsset from "@/assets/dominik-real.png.asset.json";
-import trockenbauAsset from "@/assets/trockenbau.png.asset.json";
-import fassadeAsset from "@/assets/fassade.png.asset.json";
-import bodenAsset from "@/assets/boden.png.asset.json";
-import kreativAsset from "@/assets/kreativ.png.asset.json";
+import dominikAsset from "@/assets/dominik-real.png";
+import trockenbauAsset from "@/assets/trockenbau.png";
+import fassadeAsset from "@/assets/fassade.png";
+import bodenAsset from "@/assets/boden.png";
+import kreativAsset from "@/assets/kreativ.png";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 import { BeforeAfterSlider } from "@/components/before-after-slider";
@@ -51,7 +51,7 @@ const services = [
     icon: Sparkles,
     title: "Kreativtechniken",
     desc: "Spachteltechniken, Strukturputz, Metallic- und Betonoptik für besondere Akzente.",
-    img: kreativAsset.url,
+    img: kreativAsset,
     backTitle: "Oberflächen mit Charakter",
     backIntro: "Handwerkliches Können trifft gestalterische Freiheit – jede Wand wird zum Unikat.",
     points: [
@@ -81,7 +81,7 @@ const services = [
     icon: Square,
     title: "Trockenbau",
     desc: "Saubere, moderne Bauweise für neue Räume und optimierten Schall- & Wärmeschutz.",
-    img: trockenbauAsset.url,
+    img: trockenbauAsset,
     backTitle: "Räume neu gedacht",
     backIntro: "Vom Neubau bis zur Renovierung – funktional, ästhetisch und wirtschaftlich.",
     points: [
@@ -95,7 +95,7 @@ const services = [
     icon: Layers,
     title: "Bodenbelagsarbeiten",
     desc: "Von der Untergrundvorbereitung bis zur Verlegung – millimetergenau.",
-    img: bodenAsset.url,
+    img: bodenAsset,
     backTitle: "Böden mit Wohlfühl-Faktor",
     backIntro: "Persönliche Beratung und fachgerechte Verlegung individuell auf Ihr Projekt abgestimmt.",
     points: [
@@ -110,7 +110,7 @@ const services = [
     icon: HomeIcon,
     title: "Fassaden",
     desc: "Fassadenanstrich und Verputzarbeiten – Ihr Ansprechpartner rund ums Haus.",
-    img: fassadeAsset.url,
+    img: fassadeAsset,
     backTitle: "Ihr Haus im besten Licht",
     backIntro: "Von der Planung bis zur Ausführung – individuell auf die Größe Ihres Projekts abgestimmt.",
     points: [
@@ -130,10 +130,10 @@ const problems = [
 ];
 
 const references = [
-  { img: kreativAsset.url, tag: "Kreativtechnik", title: "Akzentwand mit Strukturputz", desc: "Warme Metallic-Optik mit feinem Lichtspiel – ein echter Hingucker im Wohnbereich." },
-  { img: fassadeAsset.url, tag: "Fassade", title: "Fassadenrenovierung Einfamilienhaus", desc: "Komplettanstrich inkl. Vorarbeiten und Schutzbeschichtung – wetterfest für Jahre." },
-  { img: trockenbauAsset.url, tag: "Trockenbau", title: "Trockenbau-Ausbau", desc: "Neue Wände und Decken im Rohbau – sauber gespachtelt und streichfertig übergeben." },
-  { img: bodenAsset.url, tag: "Boden", title: "Bodenverlegung Eiche-Optik", desc: "Designboden in warmer Holzoptik – millimetergenau verlegt, inkl. Sockelleisten." },
+  { img: kreativAsset, tag: "Kreativtechnik", title: "Akzentwand mit Strukturputz", desc: "Warme Metallic-Optik mit feinem Lichtspiel – ein echter Hingucker im Wohnbereich." },
+  { img: fassadeAsset, tag: "Fassade", title: "Fassadenrenovierung Einfamilienhaus", desc: "Komplettanstrich inkl. Vorarbeiten und Schutzbeschichtung – wetterfest für Jahre." },
+  { img: trockenbauAsset, tag: "Trockenbau", title: "Trockenbau-Ausbau", desc: "Neue Wände und Decken im Rohbau – sauber gespachtelt und streichfertig übergeben." },
+  { img: bodenAsset, tag: "Boden", title: "Bodenverlegung Eiche-Optik", desc: "Designboden in warmer Holzoptik – millimetergenau verlegt, inkl. Sockelleisten." },
   { img: wallAfter, tag: "Innenanstrich", title: "Wohnraum-Anstrich", desc: "Frische Wandfarbe in warmem Beige – ein neues Wohngefühl an einem Wochenende." },
   { img: projWohnzimmer, tag: "Spachteltechnik", title: "Wohnzimmer in Betonoptik", desc: "Edle Spachteltechnik mit sanften Verläufen – modern und zeitlos zugleich." },
 ];
@@ -364,7 +364,7 @@ function Home() {
           <ScrollReveal className="mt-24 grid lg:grid-cols-12 gap-10 items-center bg-card rounded-2xl p-8 md:p-12 border border-border">
             <div className="lg:col-span-4">
               <div className="aspect-[4/5] rounded-xl overflow-hidden bg-anthracite">
-                <img src={dominikAsset.url} alt="Dominik Mike Wöhner, Inhaber Malermeister DMW" width={800} height={1024} loading="lazy" className="h-full w-full object-cover object-top" />
+                <img src={dominikAsset} alt="Dominik Mike Wöhner, Inhaber Malermeister DMW" width={800} height={1024} loading="lazy" className="h-full w-full object-cover object-top" />
               </div>
             </div>
             <div className="lg:col-span-8">
