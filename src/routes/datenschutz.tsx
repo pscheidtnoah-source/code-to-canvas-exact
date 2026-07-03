@@ -22,7 +22,7 @@ function Datenschutz() {
           <section>
             <h2 className="font-display text-xl font-semibold text-foreground">1. Verantwortlicher</h2>
             <p className="mt-3">
-              Malermeister DMW, Inhaber Dominik Mike Wöhner, Würzburger Str. 554, 90768 Fürth.<br />
+              Malermeister DMW, Inhaber Dominik Wöhner, Würzburger Str. 554, 90768 Fürth.<br />
               E-Mail: <a href="mailto:info@malermeister-dmw.de" className="text-gold hover:underline">info@malermeister-dmw.de</a>
             </p>
           </section>

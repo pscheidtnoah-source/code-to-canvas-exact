@@ -48,8 +48,8 @@ export function SiteFooter() {
       </div>
       <div className="border-t border-anthracite-foreground/10">
         <div className="container mx-auto px-4 py-5 text-xs text-anthracite-foreground/60 flex flex-wrap justify-between gap-2">
-          <span>© {new Date().getFullYear()} Malermeister DMW – Dominik Mike Wöhner. Alle Rechte vorbehalten.</span>
-          <span>Inhaber: Dominik Mike Wöhner</span>
+          <span>© {new Date().getFullYear()} Malermeister DMW – Dominik Wöhner. Alle Rechte vorbehalten.</span>
+          <span>Inhaber: Dominik Wöhner</span>
         </div>
       </div>
     </footer>

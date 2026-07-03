@@ -11,10 +11,10 @@ import { ScrollReveal } from "@/components/scroll-reveal";
 export const Route = createFileRoute("/ueber-mich/steckbrief")({
   head: () => ({
     meta: [
-      { title: "Steckbrief – Dominik Mike Wöhner | Malermeister DMW Fürth" },
-      { name: "description", content: "Der Werdegang von Dominik Mike Wöhner: vom Auszubildenden 2013 bis zum Malermeister 2025. Innungsbester, Platz 3 im Leistungswettbewerb, Meisterprüfung Note 2,6." },
+      { title: "Steckbrief – Dominik Wöhner | Malermeister DMW Fürth" },
+      { name: "description", content: "Der Werdegang von Dominik Wöhner: vom Auszubildenden 2013 bis zum Malermeister 2025. Innungsbester, Platz 3 im Leistungswettbewerb, Meisterprüfung Note 2,6." },
       { property: "og:title", content: "Steckbrief – Vom Gesellen zum Meister" },
-      { property: "og:description", content: "12+ Jahre Handwerk, Meisterprüfung Note 2,6, Innungsbester – der Weg von Dominik Mike Wöhner zum Malermeisterbetrieb in Fürth." },
+      { property: "og:description", content: "12+ Jahre Handwerk, Meisterprüfung Note 2,6, Innungsbester – der Weg von Dominik Wöhner zum Malermeisterbetrieb in Fürth." },
     ],
   }),
   component: SteckbriefPage,
@@ -60,7 +60,7 @@ function SteckbriefPage() {
 
       {/* HERO */}
       <section className="relative min-h-[80vh] flex items-center overflow-hidden">
-        <img src={heroBg} alt="Dominik Mike Wöhner, Malermeister aus Fürth" className="absolute inset-0 h-full w-full object-cover object-top" />
+        <img src={heroBg} alt="Dominik Wöhner, Malermeister aus Fürth" className="absolute inset-0 h-full w-full object-cover object-top" />
         <div className="absolute inset-0 bg-gradient-to-r from-anthracite/95 via-anthracite/85 to-anthracite/50" />
         <ScrollReveal className="relative container mx-auto px-4 py-24">
           <div className="max-w-3xl text-anthracite-foreground">
@@ -68,7 +68,7 @@ function SteckbriefPage() {
               <Sparkle className="h-3.5 w-3.5" /> Malermeister · Fürth
             </div>
             <h1 className="mt-6 text-5xl sm:text-6xl lg:text-7xl font-bold leading-[1.05] tracking-tight">
-              Dominik Mike Wöhner.<br />
+              Dominik Wöhner.<br />
               Vom Gesellen zum <span className="text-gold">Meister.</span>
             </h1>
             <p className="mt-6 max-w-2xl text-base sm:text-lg text-anthracite-foreground/80 leading-relaxed">
@@ -113,7 +113,7 @@ function SteckbriefPage() {
               an den Kunden, an das Handwerk und an mich selbst."
             </blockquote>
             <div className="mt-8 text-sm uppercase tracking-[0.2em] text-anthracite-foreground/60">
-              Dominik Mike Wöhner · Malermeister
+              Dominik Wöhner · Malermeister
             </div>
           </ScrollReveal>
         </div>

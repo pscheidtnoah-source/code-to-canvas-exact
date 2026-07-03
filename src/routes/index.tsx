@@ -364,12 +364,12 @@ function Home() {
           <ScrollReveal className="mt-24 grid lg:grid-cols-12 gap-10 items-center bg-card rounded-2xl p-8 md:p-12 border border-border">
             <div className="lg:col-span-4">
               <div className="aspect-[4/5] rounded-xl overflow-hidden bg-anthracite">
-                <img src={dominikAsset} alt="Dominik Mike Wöhner, Inhaber Malermeister DMW" width={800} height={1024} loading="lazy" className="h-full w-full object-cover object-top" />
+                <img src={dominikAsset} alt="Dominik Wöhner, Inhaber Malermeister DMW" width={800} height={1024} loading="lazy" className="h-full w-full object-cover object-top" />
               </div>
             </div>
             <div className="lg:col-span-8">
               <div className="text-xs font-semibold uppercase tracking-[0.2em] text-gold">Der Mann hinter der Marke</div>
-              <h3 className="mt-3 text-3xl sm:text-4xl font-bold text-foreground">Dominik Mike Wöhner</h3>
+              <h3 className="mt-3 text-3xl sm:text-4xl font-bold text-foreground">Dominik Wöhner</h3>
               <p className="mt-2 text-muted-foreground">Inhaber & Malermeister</p>
               <blockquote className="mt-6 relative pl-6 border-l-4 border-gold">
                 <p className="text-xl sm:text-2xl leading-relaxed text-foreground italic">
