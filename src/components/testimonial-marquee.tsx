@@ -38,7 +38,6 @@ export function TestimonialMarquee({ items }: { items: Testimonial[] }) {
                 {t.name} <span className="text-muted-foreground font-normal">· {t.city}</span>
               </div>
               <div className="text-xs text-muted-foreground mt-1">{t.project}</div>
-              <div className="text-xs uppercase tracking-wider text-gold mt-2">via {t.source}</div>
             </figcaption>
           </figure>
         ))}
