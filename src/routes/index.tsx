@@ -378,7 +378,7 @@ function Home() {
               </blockquote>
               <div className="mt-8 flex flex-wrap gap-4">
                 <a href="#kontakt" className="inline-flex items-center gap-2 rounded-md bg-anthracite px-6 py-3 text-sm font-semibold text-anthracite-foreground hover:bg-anthracite/90 transition">
-                  Beratung anfragen <ArrowRight className="h-4 w-4" />
+                  Angebot einholen <ArrowRight className="h-4 w-4" />
                 </a>
                 <a href="tel:015757475791" className="inline-flex items-center gap-2 rounded-md border border-input px-6 py-3 text-sm font-semibold text-foreground hover:bg-secondary transition">
                   <Phone className="h-4 w-4" /> 0157 57475791
