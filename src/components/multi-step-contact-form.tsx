@@ -99,10 +99,10 @@ export function MultiStepContactForm() {
         />
       </div>
 
-      <div className="flex-1 flex flex-col justify-center">
-        <h3 className="mt-2 text-2xl sm:text-3xl font-bold">{current.label}</h3>
+      <div className="flex-1 flex flex-col justify-center py-8">
+        <h3 className="mt-2 text-2xl sm:text-3xl font-bold leading-tight">{current.label}</h3>
 
-        <div className="mt-6 flex-1 flex flex-col">
+        <div className="mt-10 flex-1 flex flex-col">
           {current.type === "textarea" ? (
             <textarea
               value={value}
