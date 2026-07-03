@@ -3,7 +3,7 @@ import {
   Phone, ArrowRight, Check, Brush, Sparkles, Square, Layers, Home as HomeIcon, PaintRoller,
   Frown, Clock, Lightbulb, UserCheck, Sparkle, MapPin, Mail, Star, Quote,
 } from "lucide-react";
-import heroImg from "@/assets/hero.jpg";
+import heroImg from "@/assets/hero.png";
 import projWohnzimmer from "@/assets/project-wohnzimmer.jpg";
 import wallBefore from "@/assets/wall-before.jpg";
 import wallAfter from "@/assets/wall-after.jpg";
