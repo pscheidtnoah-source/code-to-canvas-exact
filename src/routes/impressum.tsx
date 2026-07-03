@@ -6,7 +6,7 @@ export const Route = createFileRoute("/impressum")({
   head: () => ({
     meta: [
       { title: "Impressum – Malermeister DMW" },
-      { name: "description", content: "Impressum von Malermeister DMW, Inhaber Dominik Mike Wöhner, Fürth." },
+      { name: "description", content: "Impressum von Malermeister DMW, Inhaber Dominik Wöhner, Fürth." },
     ],
   }),
   component: Impressum,
@@ -23,7 +23,7 @@ function Impressum() {
             <h2 className="font-display text-xl font-semibold text-foreground">Angaben gemäß § 5 TMG</h2>
             <p className="mt-3">
               Malermeister DMW<br />
-              Inhaber: Dominik Mike Wöhner<br />
+              Inhaber: Dominik Wöhner<br />
               Würzburger Str. 554<br />
               90768 Fürth
             </p>
@@ -41,7 +41,7 @@ function Impressum() {
           </section>
           <section>
             <h2 className="font-display text-xl font-semibold text-foreground">Verantwortlich für den Inhalt</h2>
-            <p className="mt-3">Dominik Mike Wöhner, Anschrift wie oben.</p>
+            <p className="mt-3">Dominik Wöhner, Anschrift wie oben.</p>
           </section>
           <section>
             <h2 className="font-display text-xl font-semibold text-foreground">Haftung für Inhalte</h2>
