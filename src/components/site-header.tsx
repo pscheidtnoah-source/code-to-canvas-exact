@@ -4,11 +4,12 @@ import { useState } from "react";
 import logoAsset from "@/assets/logo.png";
 
 const navItems = [
-  { label: "Home", href: "#home" },
-  { label: "Leistungen", href: "#leistungen" },
-  { label: "Über mich", href: "#ueber" },
-  { label: "Referenzen", href: "#referenzen" },
-  { label: "Kontakt", href: "#kontakt" },
+  { label: "Home", href: "/#home" },
+  { label: "Leistungen", href: "/#leistungen" },
+  { label: "Über mich", href: "/#ueber" },
+  { label: "Steckbrief", href: "/ueber-mich/steckbrief" },
+  { label: "Referenzen", href: "/#referenzen" },
+  { label: "Kontakt", href: "/#kontakt" },
 ];
 
 export function SiteHeader() {
