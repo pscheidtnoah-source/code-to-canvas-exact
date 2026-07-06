@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from "react";
 import {
   Sparkle, ArrowRight, Phone, GraduationCap, Award, School, Trophy, Quote,
 } from "lucide-react";
-import heroBg from "@/assets/dominik-real.png";
+import heroBg from "@/assets/dominik-steckbrief.png";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 import { ScrollReveal } from "@/components/scroll-reveal";
@@ -60,7 +60,7 @@ function SteckbriefPage() {
 
       {/* HERO */}
       <section className="relative min-h-[80vh] flex items-center overflow-hidden">
-        <img src={heroBg} alt="Dominik Wöhner, Malermeister aus Fürth" className="absolute inset-0 h-full w-full object-cover object-top" />
+        <img src={heroBg} alt="Dominik Wöhner, Malermeister aus Fürth" className="absolute inset-0 h-full w-full object-cover object-center sm:object-[center_20%] lg:[object-fit:contain] lg:object-right lg:bg-anthracite" />
         <div className="absolute inset-0 bg-gradient-to-r from-anthracite/95 via-anthracite/85 to-anthracite/50" />
         <ScrollReveal className="relative container mx-auto px-4 py-24">
           <div className="max-w-3xl text-anthracite-foreground">
