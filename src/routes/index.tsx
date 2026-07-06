@@ -282,44 +282,7 @@ function Home() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {services.map((s, i) => (
               <ScrollReveal key={s.title} delay={i * 100} className="h-[460px]">
-                <article tabIndex={0} className="group [perspective:1400px] h-full outline-none">
-                  <div className="relative h-full w-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] group-focus:[transform:rotateY(180deg)]">
-                    {/* FRONT */}
-                    <div className="absolute inset-0 rounded-xl border border-border bg-card overflow-hidden [backface-visibility:hidden] [-webkit-backface-visibility:hidden]">
-                      <div className="aspect-[4/3] overflow-hidden bg-anthracite">
-                        <img src={s.img} alt={s.title} width={1024} height={768} loading="lazy" className="h-full w-full object-cover" />
-                      </div>
-                      <div className="p-6">
-                        <div className="flex items-center gap-3">
-                          <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-gold/15 text-gold">
-                            <s.icon className="h-5 w-5" />
-                          </div>
-                          <h3 className="text-xl font-semibold text-foreground">{s.title}</h3>
-                        </div>
-                        <p className="mt-3 text-muted-foreground leading-relaxed text-sm">{s.desc}</p>
-                        <p className="mt-4 text-xs uppercase tracking-widest text-gold/80">Karte drehen →</p>
-                      </div>
-                    </div>
-                    {/* BACK */}
-                    <div className="absolute inset-0 rounded-xl border border-gold/40 bg-anthracite text-white p-7 flex flex-col [transform:rotateY(180deg)] [backface-visibility:hidden] [-webkit-backface-visibility:hidden] overflow-auto">
-                      <div className="flex items-center gap-3">
-                        <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-gold text-anthracite">
-                          <s.icon className="h-5 w-5" />
-                        </div>
-                        <h3 className="text-lg font-semibold text-gold">{s.backTitle}</h3>
-                      </div>
-                      <p className="mt-3 text-sm text-white/80 leading-relaxed">{s.backIntro}</p>
-                      <ul className="mt-4 space-y-2 text-sm">
-                        {s.points.map((p) => (
-                          <li key={p} className="flex gap-2">
-                            <span className="text-gold mt-0.5">•</span>
-                            <span className="text-white/90">{p}</span>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                </article>
+                <ServiceCard service={s} />
               </ScrollReveal>
             ))}
           </div>
