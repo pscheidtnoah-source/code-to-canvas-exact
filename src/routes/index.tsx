@@ -405,3 +405,67 @@ function Home() {
     </div>
   );
 }
+
+type ServiceItem = (typeof services)[number];
+
+function ServiceCard({ service: s }: { service: ServiceItem }) {
+  const [flipped, setFlipped] = useState(false);
+  return (
+    <article className="[perspective:1400px] h-full">
+      <div
+        className={`relative h-full w-full transition-transform duration-700 [transform-style:preserve-3d] ${
+          flipped ? "[transform:rotateY(180deg)]" : ""
+        }`}
+      >
+        {/* FRONT */}
+        <div className="absolute inset-0 rounded-xl border border-border bg-card overflow-hidden [backface-visibility:hidden] [-webkit-backface-visibility:hidden] flex flex-col">
+          <div className="aspect-[4/3] overflow-hidden bg-anthracite">
+            <img src={s.img} alt={s.title} width={1024} height={768} loading="lazy" className="h-full w-full object-cover" />
+          </div>
+          <div className="p-6 flex-1 flex flex-col">
+            <div className="flex items-center gap-3">
+              <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-gold/15 text-gold">
+                <s.icon className="h-5 w-5" />
+              </div>
+              <h3 className="text-xl font-semibold text-foreground">{s.title}</h3>
+            </div>
+            <p className="mt-3 text-muted-foreground leading-relaxed text-sm">{s.desc}</p>
+            <button
+              type="button"
+              onClick={() => setFlipped(true)}
+              className="mt-4 self-start inline-flex items-center gap-2 rounded-md border-2 border-gold px-4 py-2 text-xs font-semibold uppercase tracking-widest text-white bg-anthracite hover:bg-gold hover:text-anthracite transition-colors"
+            >
+              Karte drehen →
+            </button>
+          </div>
+        </div>
+        {/* BACK */}
+        <div className="absolute inset-0 rounded-xl border border-gold/40 bg-anthracite text-white p-7 flex flex-col [transform:rotateY(180deg)] [backface-visibility:hidden] [-webkit-backface-visibility:hidden] overflow-auto">
+          <div className="flex items-center gap-3">
+            <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-gold text-anthracite">
+              <s.icon className="h-5 w-5" />
+            </div>
+            <h3 className="text-lg font-semibold text-gold">{s.backTitle}</h3>
+          </div>
+          <p className="mt-3 text-sm text-white/80 leading-relaxed">{s.backIntro}</p>
+          <ul className="mt-4 space-y-2 text-sm">
+            {s.points.map((p) => (
+              <li key={p} className="flex gap-2">
+                <span className="text-gold mt-0.5">•</span>
+                <span className="text-white/90">{p}</span>
+              </li>
+            ))}
+          </ul>
+          <button
+            type="button"
+            onClick={() => setFlipped(false)}
+            className="mt-4 self-start inline-flex items-center gap-2 rounded-md border-2 border-gold px-4 py-2 text-xs font-semibold uppercase tracking-widest text-white hover:bg-gold hover:text-anthracite transition-colors"
+          >
+            ← Zurück
+          </button>
+        </div>
+      </div>
+    </article>
+  );
+}
+
