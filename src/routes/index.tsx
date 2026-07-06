@@ -207,7 +207,7 @@ function Home() {
                 <div className="text-xs uppercase tracking-wider text-anthracite-foreground/70 mt-1">Jahre Erfahrung</div>
               </div>
               <div>
-                <div className="text-4xl font-bold text-gold">500+</div>
+                <div className="text-4xl font-bold text-gold">50+</div>
                 <div className="text-xs uppercase tracking-wider text-anthracite-foreground/70 mt-1">Projekte realisiert</div>
               </div>
               <div>
