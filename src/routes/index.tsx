@@ -390,7 +390,7 @@ function Home() {
       </section>
 
       {/* TESTIMONIALS – Slideshow */}
-      <section className="py-24 bg-secondary/40 overflow-hidden">
+      <section id="referenzen" className="py-24 bg-secondary/40 overflow-hidden scroll-mt-24">
         <div className="container mx-auto px-4">
           <ScrollReveal className="max-w-3xl mb-12">
             <div className="text-xs font-semibold uppercase tracking-[0.2em] text-gold">Kundenstimmen</div>
