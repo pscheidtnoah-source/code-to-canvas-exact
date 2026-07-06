@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { useState } from "react";
 import {
   Phone, ArrowRight, Check, Brush, Sparkles, Square, Layers, Home as HomeIcon, PaintRoller,
   Frown, Clock, Lightbulb, UserCheck, Sparkle, MapPin, Mail, Star, Quote,
