@@ -13,6 +13,7 @@ import { Route as ImpressumRouteImport } from './routes/impressum'
 import { Route as DatenschutzRouteImport } from './routes/datenschutz'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as UeberMichSteckbriefRouteImport } from './routes/ueber-mich.steckbrief'
+import { Route as UeberMichPartnerRouteImport } from './routes/ueber-mich.partner'
 
 const ImpressumRoute = ImpressumRouteImport.update({
   id: '/impressum',
@@ -34,17 +35,24 @@ const UeberMichSteckbriefRoute = UeberMichSteckbriefRouteImport.update({
   path: '/ueber-mich/steckbrief',
   getParentRoute: () => rootRouteImport,
 } as any)
+const UeberMichPartnerRoute = UeberMichPartnerRouteImport.update({
+  id: '/ueber-mich/partner',
+  path: '/ueber-mich/partner',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/datenschutz': typeof DatenschutzRoute
   '/impressum': typeof ImpressumRoute
+  '/ueber-mich/partner': typeof UeberMichPartnerRoute
   '/ueber-mich/steckbrief': typeof UeberMichSteckbriefRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/datenschutz': typeof DatenschutzRoute
   '/impressum': typeof ImpressumRoute
+  '/ueber-mich/partner': typeof UeberMichPartnerRoute
   '/ueber-mich/steckbrief': typeof UeberMichSteckbriefRoute
 }
 export interface FileRoutesById {
@@ -52,18 +60,30 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/datenschutz': typeof DatenschutzRoute
   '/impressum': typeof ImpressumRoute
+  '/ueber-mich/partner': typeof UeberMichPartnerRoute
   '/ueber-mich/steckbrief': typeof UeberMichSteckbriefRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/datenschutz' | '/impressum' | '/ueber-mich/steckbrief'
+  fullPaths:
+    | '/'
+    | '/datenschutz'
+    | '/impressum'
+    | '/ueber-mich/partner'
+    | '/ueber-mich/steckbrief'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/datenschutz' | '/impressum' | '/ueber-mich/steckbrief'
+  to:
+    | '/'
+    | '/datenschutz'
+    | '/impressum'
+    | '/ueber-mich/partner'
+    | '/ueber-mich/steckbrief'
   id:
     | '__root__'
     | '/'
     | '/datenschutz'
     | '/impressum'
+    | '/ueber-mich/partner'
     | '/ueber-mich/steckbrief'
   fileRoutesById: FileRoutesById
 }
@@ -71,6 +91,7 @@ export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   DatenschutzRoute: typeof DatenschutzRoute
   ImpressumRoute: typeof ImpressumRoute
+  UeberMichPartnerRoute: typeof UeberMichPartnerRoute
   UeberMichSteckbriefRoute: typeof UeberMichSteckbriefRoute
 }
 
@@ -104,6 +125,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof UeberMichSteckbriefRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/ueber-mich/partner': {
+      id: '/ueber-mich/partner'
+      path: '/ueber-mich/partner'
+      fullPath: '/ueber-mich/partner'
+      preLoaderRoute: typeof UeberMichPartnerRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
@@ -111,6 +139,7 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   DatenschutzRoute: DatenschutzRoute,
   ImpressumRoute: ImpressumRoute,
+  UeberMichPartnerRoute: UeberMichPartnerRoute,
   UeberMichSteckbriefRoute: UeberMichSteckbriefRoute,
 }
 export const routeTree = rootRouteImport
