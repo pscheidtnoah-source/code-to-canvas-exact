@@ -59,7 +59,9 @@ function PartnerPage() {
               <Sparkle className="h-3.5 w-3.5" /> Unsere Partner
             </div>
             <h1 className="mt-6 text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight tracking-tight text-foreground">
-              Für alles rund ums <span className="text-gold">Zuhause</span> haben wir den passenden Partner an unserer Seite.
+              Für alles rund ums <span className="text-gold">Zuhause</span>
+              <br />
+              haben wir den passenden Partner an unserer Seite.
             </h1>
             <p className="mt-6 text-lg text-muted-foreground">
               Ob Planung, Material oder Spezialgewerk – ein starkes Netzwerk sorgt dafür,
