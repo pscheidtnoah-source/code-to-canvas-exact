@@ -374,7 +374,7 @@ function Home() {
             <div>
               <div className="text-xs font-semibold uppercase tracking-[0.2em] text-anthracite/70">Kontakt</div>
               <h2 className="mt-3 text-4xl sm:text-5xl font-bold text-anthracite">Lassen Sie uns über Ihr Projekt sprechen.</h2>
-              <p className="mt-4 text-anthracite/80 text-lg">Beantworten Sie ein paar kurze Fragen – wir melden uns innerhalb von 24 Stunden mit einem unverbindlichen Vorschlag.</p>
+              <p className="mt-4 text-anthracite/80 text-lg">Füllen Sie das unverbindliche Kontaktformular aus und wir melden uns innerhalb von 24h persönlich bei Ihnen.</p>
               <div className="mt-8 grid sm:grid-cols-2 gap-4">
                 <a href="tel:015757475791" className="rounded-xl bg-anthracite text-anthracite-foreground p-5 hover:bg-anthracite/90 transition">
                   <Phone className="h-5 w-5 text-gold mb-2" />
