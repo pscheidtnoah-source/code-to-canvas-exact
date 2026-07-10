@@ -359,7 +359,6 @@ function Home() {
           <ScrollReveal className="max-w-3xl mb-12">
             <div className="text-xs font-semibold uppercase tracking-[0.2em] text-gold">Kundenstimmen</div>
             <h2 className="mt-3 text-4xl sm:text-5xl font-bold text-foreground">Was unsere Kunden sagen.</h2>
-            <p className="mt-4 text-muted-foreground text-lg">Echte Bewertungen von MyHammer, Blauarbeit und Google.</p>
           </ScrollReveal>
         </div>
         <ScrollReveal>
