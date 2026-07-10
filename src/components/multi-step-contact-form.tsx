@@ -3,15 +3,28 @@ import { ArrowLeft, ArrowRight, Check, Send } from "lucide-react";
 import { toast } from "sonner";
 
 type FormData = {
-  name: string;
+  salutation: string;
+  firstName: string;
+  lastName: string;
   email: string;
   phone: string;
   service: string;
-  area: string;
+  squareMeters: string;
+  rooms: string;
   message: string;
 };
 
-const initial: FormData = { name: "", email: "", phone: "", service: "", area: "", message: "" };
+const initial: FormData = {
+  salutation: "",
+  firstName: "",
+  lastName: "",
+  email: "",
+  phone: "",
+  service: "",
+  squareMeters: "",
+  rooms: "",
+  message: "",
+};
 
 const services = [
   "Innenanstrich",
@@ -22,12 +35,17 @@ const services = [
   "Sonstiges",
 ];
 
+const salutations = ["Herr", "Frau", "Divers"];
+
 const steps = [
-  { key: "name", label: "Wie heißen Sie?", placeholder: "Vor- und Nachname", type: "text" as const },
-  { key: "email", label: "Ihre E-Mail-Adresse?", placeholder: "name@beispiel.de", type: "email" as const },
-  { key: "phone", label: "Ihre Telefonnummer?", placeholder: "+49 …", type: "tel" as const },
-  { key: "service", label: "Welche Leistung interessiert Sie?", type: "choice" as const },
-  { key: "area", label: "Ungefähre Fläche / Räume?", placeholder: "z. B. 60 m² oder 3 Räume", type: "text" as const },
+  { key: "salutation", label: "Anrede", type: "choice" as const, choices: salutations },
+  { key: "firstName", label: "Vorname", placeholder: "Ihr Vorname", type: "text" as const },
+  { key: "lastName", label: "Nachname", placeholder: "Ihr Nachname", type: "text" as const },
+  { key: "email", label: "Email-Adresse", placeholder: "name@beispiel.de", type: "email" as const },
+  { key: "phone", label: "Telefonnummer", placeholder: "+49 …", type: "tel" as const },
+  { key: "service", label: "Welche Leistungen interessieren Sie?", type: "choice" as const, choices: services },
+  { key: "squareMeters", label: "Anzahl der m²", placeholder: "z. B. 60", type: "text" as const },
+  { key: "rooms", label: "Anzahl der Räume", placeholder: "z. B. 3", type: "text" as const },
   { key: "message", label: "Beschreiben Sie Ihr Projekt", placeholder: "Was wünschen Sie sich? Gibt es Besonderheiten?", type: "textarea" as const },
 ] as const;
 
@@ -45,6 +63,7 @@ export function MultiStepContactForm() {
     if (!v) return false;
     if (current.type === "email") return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v);
     if (current.type === "tel") return v.replace(/\D/g, "").length >= 6;
+    if (current.type === "choice") return true;
     return v.length >= 2;
   })();
 
@@ -57,7 +76,7 @@ export function MultiStepContactForm() {
 
   const submit = () => {
     const body = encodeURIComponent(
-      `Name: ${data.name}\nE-Mail: ${data.email}\nTelefon: ${data.phone}\nLeistung: ${data.service}\nFläche: ${data.area}\n\n${data.message}`,
+      `Anrede: ${data.salutation}\nVorname: ${data.firstName}\nNachname: ${data.lastName}\nE-Mail: ${data.email}\nTelefon: ${data.phone}\nLeistung: ${data.service}\nFläche: ${data.squareMeters} m²\nRäume: ${data.rooms}\n\n${data.message}`,
     );
     window.location.href = `mailto:info@malermeister-dmw.de?subject=${encodeURIComponent(
       "Anfrage über die Website",
@@ -76,7 +95,7 @@ export function MultiStepContactForm() {
         </div>
         <h3 className="mt-6 text-2xl font-bold">Anfrage abgesendet!</h3>
         <p className="mt-3 text-anthracite-foreground/80">
-          Vielen Dank, {data.name.split(" ")[0]}. Wir melden uns innerhalb von 24 Stunden.
+          Vielen Dank, {data.firstName}. Wir melden uns innerhalb von 24 Stunden.
         </p>
       </div>
     );
@@ -114,7 +133,7 @@ export function MultiStepContactForm() {
             />
           ) : current.type === "choice" ? (
             <div className="grid sm:grid-cols-2 gap-3 content-start">
-              {services.map((s) => (
+              {current.choices!.map((s) => (
                 <button
                   type="button"
                   key={s}
