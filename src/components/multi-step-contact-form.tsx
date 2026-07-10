@@ -35,7 +35,7 @@ const services = [
   "Sonstiges",
 ];
 
-const salutations = ["Herr", "Frau", "Divers"];
+const salutations = ["Herr", "Frau"];
 
 type FieldType = "text" | "email" | "tel" | "textarea" | "choice";
 
