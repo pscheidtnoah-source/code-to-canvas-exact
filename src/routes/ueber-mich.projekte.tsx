@@ -41,10 +41,6 @@ const projects: Project[] = [
   { src: wohnzimmer, alt: "Innenanstrich Schlafzimmer, ruhige Farbtöne", category: "Innenanstrich" },
   { src: wallAfter, alt: "Innenanstrich Küche, hochwertige Latexfarbe", category: "Innenanstrich" },
 
-  { src: kreativ, alt: "Fugenlose Oberfläche Wand, mineralische Spachteltechnik", category: "Fugenlose Oberflächen" },
-  { src: boden, alt: "Fugenloser Boden, dekorative Spachtelbeschichtung", category: "Fugenlose Oberflächen" },
-  { src: kreativ, alt: "Fugenlose Wandgestaltung, Beton-Optik", category: "Fugenlose Oberflächen" },
-  { src: boden, alt: "Fugenloser Boden im Wohnbereich, seidenmatt", category: "Fugenlose Oberflächen" },
   { src: fugenlos02.url, alt: "Fugenlose Oberfläche Dusche, mineralischer Spachtelputz in Grau", category: "Fugenlose Oberflächen" },
   { src: fugenlos03.url, alt: "Fugenloses Bad mit Beton-Optik und indirekter Beleuchtung", category: "Fugenlose Oberflächen" },
   { src: fugenlos04.url, alt: "Fugenlose Duschwand in Grüntönen mit LED-Lichtband", category: "Fugenlose Oberflächen" },
