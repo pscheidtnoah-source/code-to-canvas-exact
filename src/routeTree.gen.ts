@@ -13,6 +13,7 @@ import { Route as ImpressumRouteImport } from './routes/impressum'
 import { Route as DatenschutzRouteImport } from './routes/datenschutz'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as UeberMichSteckbriefRouteImport } from './routes/ueber-mich.steckbrief'
+import { Route as UeberMichProjekteRouteImport } from './routes/ueber-mich.projekte'
 import { Route as UeberMichPartnerRouteImport } from './routes/ueber-mich.partner'
 
 const ImpressumRoute = ImpressumRouteImport.update({
@@ -35,6 +36,11 @@ const UeberMichSteckbriefRoute = UeberMichSteckbriefRouteImport.update({
   path: '/ueber-mich/steckbrief',
   getParentRoute: () => rootRouteImport,
 } as any)
+const UeberMichProjekteRoute = UeberMichProjekteRouteImport.update({
+  id: '/ueber-mich/projekte',
+  path: '/ueber-mich/projekte',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const UeberMichPartnerRoute = UeberMichPartnerRouteImport.update({
   id: '/ueber-mich/partner',
   path: '/ueber-mich/partner',
@@ -46,6 +52,7 @@ export interface FileRoutesByFullPath {
   '/datenschutz': typeof DatenschutzRoute
   '/impressum': typeof ImpressumRoute
   '/ueber-mich/partner': typeof UeberMichPartnerRoute
+  '/ueber-mich/projekte': typeof UeberMichProjekteRoute
   '/ueber-mich/steckbrief': typeof UeberMichSteckbriefRoute
 }
 export interface FileRoutesByTo {
@@ -53,6 +60,7 @@ export interface FileRoutesByTo {
   '/datenschutz': typeof DatenschutzRoute
   '/impressum': typeof ImpressumRoute
   '/ueber-mich/partner': typeof UeberMichPartnerRoute
+  '/ueber-mich/projekte': typeof UeberMichProjekteRoute
   '/ueber-mich/steckbrief': typeof UeberMichSteckbriefRoute
 }
 export interface FileRoutesById {
@@ -61,6 +69,7 @@ export interface FileRoutesById {
   '/datenschutz': typeof DatenschutzRoute
   '/impressum': typeof ImpressumRoute
   '/ueber-mich/partner': typeof UeberMichPartnerRoute
+  '/ueber-mich/projekte': typeof UeberMichProjekteRoute
   '/ueber-mich/steckbrief': typeof UeberMichSteckbriefRoute
 }
 export interface FileRouteTypes {
@@ -70,6 +79,7 @@ export interface FileRouteTypes {
     | '/datenschutz'
     | '/impressum'
     | '/ueber-mich/partner'
+    | '/ueber-mich/projekte'
     | '/ueber-mich/steckbrief'
   fileRoutesByTo: FileRoutesByTo
   to:
@@ -77,6 +87,7 @@ export interface FileRouteTypes {
     | '/datenschutz'
     | '/impressum'
     | '/ueber-mich/partner'
+    | '/ueber-mich/projekte'
     | '/ueber-mich/steckbrief'
   id:
     | '__root__'
@@ -84,6 +95,7 @@ export interface FileRouteTypes {
     | '/datenschutz'
     | '/impressum'
     | '/ueber-mich/partner'
+    | '/ueber-mich/projekte'
     | '/ueber-mich/steckbrief'
   fileRoutesById: FileRoutesById
 }
@@ -92,6 +104,7 @@ export interface RootRouteChildren {
   DatenschutzRoute: typeof DatenschutzRoute
   ImpressumRoute: typeof ImpressumRoute
   UeberMichPartnerRoute: typeof UeberMichPartnerRoute
+  UeberMichProjekteRoute: typeof UeberMichProjekteRoute
   UeberMichSteckbriefRoute: typeof UeberMichSteckbriefRoute
 }
 
@@ -125,6 +138,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof UeberMichSteckbriefRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/ueber-mich/projekte': {
+      id: '/ueber-mich/projekte'
+      path: '/ueber-mich/projekte'
+      fullPath: '/ueber-mich/projekte'
+      preLoaderRoute: typeof UeberMichProjekteRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/ueber-mich/partner': {
       id: '/ueber-mich/partner'
       path: '/ueber-mich/partner'
@@ -140,6 +160,7 @@ const rootRouteChildren: RootRouteChildren = {
   DatenschutzRoute: DatenschutzRoute,
   ImpressumRoute: ImpressumRoute,
   UeberMichPartnerRoute: UeberMichPartnerRoute,
+  UeberMichProjekteRoute: UeberMichProjekteRoute,
   UeberMichSteckbriefRoute: UeberMichSteckbriefRoute,
 }
 export const routeTree = rootRouteImport
