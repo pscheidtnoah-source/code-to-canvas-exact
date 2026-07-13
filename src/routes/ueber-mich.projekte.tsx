@@ -12,6 +12,10 @@ import fassade from "@/assets/fassade.png";
 import trockenbau from "@/assets/trockenbau.png";
 import boden from "@/assets/boden.png";
 import hero from "@/assets/hero.png";
+import fugenlos02 from "@/assets/fugenlos-02.jpg.asset.json";
+import fugenlos03 from "@/assets/fugenlos-03.jpg.asset.json";
+import fugenlos04 from "@/assets/fugenlos-04.jpg.asset.json";
+import fugenlos06 from "@/assets/fugenlos-06.jpg.asset.json";
 
 export const Route = createFileRoute("/ueber-mich/projekte")({
   head: () => ({
@@ -41,6 +45,10 @@ const projects: Project[] = [
   { src: boden, alt: "Fugenloser Boden, dekorative Spachtelbeschichtung", category: "Fugenlose Oberflächen" },
   { src: kreativ, alt: "Fugenlose Wandgestaltung, Beton-Optik", category: "Fugenlose Oberflächen" },
   { src: boden, alt: "Fugenloser Boden im Wohnbereich, seidenmatt", category: "Fugenlose Oberflächen" },
+  { src: fugenlos02.url, alt: "Fugenlose Oberfläche Dusche, mineralischer Spachtelputz in Grau", category: "Fugenlose Oberflächen" },
+  { src: fugenlos03.url, alt: "Fugenloses Bad mit Beton-Optik und indirekter Beleuchtung", category: "Fugenlose Oberflächen" },
+  { src: fugenlos04.url, alt: "Fugenlose Duschwand in Grüntönen mit LED-Lichtband", category: "Fugenlose Oberflächen" },
+  { src: fugenlos06.url, alt: "Fugenlose Wandgestaltung Gäste-WC, warme Naturtöne", category: "Fugenlose Oberflächen" },
 
   { src: fassade, alt: "Fassadenanstrich Einfamilienhaus, cremeweiß", category: "Fassade" },
   { src: fassade, alt: "Fassadensanierung, langlebiger Silikatanstrich", category: "Fassade" },
