@@ -45,6 +45,10 @@ const projects: Project[] = [
   { src: boden, alt: "Fugenloser Boden, dekorative Spachtelbeschichtung", category: "Fugenlose Oberflächen" },
   { src: kreativ, alt: "Fugenlose Wandgestaltung, Beton-Optik", category: "Fugenlose Oberflächen" },
   { src: boden, alt: "Fugenloser Boden im Wohnbereich, seidenmatt", category: "Fugenlose Oberflächen" },
+  { src: fugenlos02.url, alt: "Fugenlose Oberfläche Dusche, mineralischer Spachtelputz in Grau", category: "Fugenlose Oberflächen" },
+  { src: fugenlos03.url, alt: "Fugenloses Bad mit Beton-Optik und indirekter Beleuchtung", category: "Fugenlose Oberflächen" },
+  { src: fugenlos04.url, alt: "Fugenlose Duschwand in Grüntönen mit LED-Lichtband", category: "Fugenlose Oberflächen" },
+  { src: fugenlos06.url, alt: "Fugenlose Wandgestaltung Gäste-WC, warme Naturtöne", category: "Fugenlose Oberflächen" },
 
   { src: fassade, alt: "Fassadenanstrich Einfamilienhaus, cremeweiß", category: "Fassade" },
   { src: fassade, alt: "Fassadensanierung, langlebiger Silikatanstrich", category: "Fassade" },
