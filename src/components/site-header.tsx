@@ -24,10 +24,7 @@ const navItems: NavItem[] = [
   {
     label: "Referenzen",
     href: "/#referenzen",
-    children: [
-      { label: "Referenzen", href: "/#referenzen" },
-      { label: "Projekte", href: "/ueber-mich/projekte" },
-    ],
+    children: [{ label: "Projekte", href: "/ueber-mich/projekte" }],
   },
   { label: "Kontakt", href: "/#kontakt" },
 ];
