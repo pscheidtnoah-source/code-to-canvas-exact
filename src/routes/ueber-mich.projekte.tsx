@@ -42,8 +42,6 @@ type Category = "Innenanstrich" | "Fugenlose Oberflächen" | "Kreativtechnik" | 
 type Project = { src: string; alt: string; category: Category };
 
 const projects: Project[] = [
-  { src: wohnzimmer, alt: "Innenanstrich Wohnzimmer, warme Wandfarbe", category: "Innenanstrich" },
-  { src: wallAfter, alt: "Innenanstrich Wand, sauber gestrichen in Weiß", category: "Innenanstrich" },
   { src: innenanstrich01.url, alt: "Innenanstrich Flur mit Wandgestaltung in warmem Rotbraun und Holzelementen", category: "Innenanstrich" },
   { src: innenanstrich02.url, alt: "Innenanstrich Treppenhaus in warmem Gelbton mit Strukturputz", category: "Innenanstrich" },
   { src: innenanstrich03.url, alt: "Innenanstrich Wand in kräftigem Orange mit Kunstwerken", category: "Innenanstrich" },
