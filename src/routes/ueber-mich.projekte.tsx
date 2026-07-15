@@ -16,6 +16,8 @@ import fugenlos02 from "@/assets/fugenlos-02.jpg.asset.json";
 import fugenlos03 from "@/assets/fugenlos-03.jpg.asset.json";
 import fugenlos04 from "@/assets/fugenlos-04.jpg.asset.json";
 import fugenlos06 from "@/assets/fugenlos-06.jpg.asset.json";
+import kreativtechnik03 from "@/assets/kreativtechnik-03.jpg.asset.json";
+import kreativtechnik04 from "@/assets/kreativtechnik-04.jpg.asset.json";
 
 export const Route = createFileRoute("/ueber-mich/projekte")({
   head: () => ({
