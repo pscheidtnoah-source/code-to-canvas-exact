@@ -16,6 +16,8 @@ import fugenlos02 from "@/assets/fugenlos-02.jpg.asset.json";
 import fugenlos03 from "@/assets/fugenlos-03.jpg.asset.json";
 import fugenlos04 from "@/assets/fugenlos-04.jpg.asset.json";
 import fugenlos06 from "@/assets/fugenlos-06.jpg.asset.json";
+import kreativtechnik03 from "@/assets/kreativtechnik-03.jpg.asset.json";
+import kreativtechnik04 from "@/assets/kreativtechnik-04.jpg.asset.json";
 
 export const Route = createFileRoute("/ueber-mich/projekte")({
   head: () => ({
@@ -29,7 +31,7 @@ export const Route = createFileRoute("/ueber-mich/projekte")({
   component: ProjektePage,
 });
 
-type Category = "Innenanstrich" | "Fugenlose Oberflächen" | "Fassade" | "Trockenbau";
+type Category = "Innenanstrich" | "Fugenlose Oberflächen" | "Kreativtechnik" | "Fassade" | "Trockenbau";
 
 type Project = { src: string; alt: string; category: Category };
 
@@ -46,6 +48,9 @@ const projects: Project[] = [
   { src: fugenlos04.url, alt: "Fugenlose Duschwand in Grüntönen mit LED-Lichtband", category: "Fugenlose Oberflächen" },
   { src: fugenlos06.url, alt: "Fugenlose Wandgestaltung Gäste-WC, warme Naturtöne", category: "Fugenlose Oberflächen" },
 
+  { src: kreativtechnik03.url, alt: "Kreativtechnik Wandgestaltung mit metallischer Struktur und Holzvertäfelung", category: "Kreativtechnik" },
+  { src: kreativtechnik04.url, alt: "Kreativtechnik Goldwand mit reliefartiger Spachteltechnik und indirekter Beleuchtung", category: "Kreativtechnik" },
+
   { src: fassade, alt: "Fassadenanstrich Einfamilienhaus, cremeweiß", category: "Fassade" },
   { src: fassade, alt: "Fassadensanierung, langlebiger Silikatanstrich", category: "Fassade" },
   { src: fassade, alt: "Fassade mit Akzentfarbe, moderne Optik", category: "Fassade" },
@@ -55,7 +60,7 @@ const projects: Project[] = [
   { src: trockenbau, alt: "Trockenbau abgehängte Decke mit indirekter Beleuchtung", category: "Trockenbau" },
 ];
 
-const categories: Category[] = ["Innenanstrich", "Fugenlose Oberflächen", "Fassade", "Trockenbau"];
+const categories: Category[] = ["Innenanstrich", "Fugenlose Oberflächen", "Kreativtechnik", "Fassade", "Trockenbau"];
 type Filter = "Alle" | Category;
 const filters: Filter[] = ["Alle", ...categories];
 const PREVIEW_COUNT = 4;
