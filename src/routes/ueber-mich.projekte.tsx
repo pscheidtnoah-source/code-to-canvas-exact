@@ -48,6 +48,9 @@ const projects: Project[] = [
   { src: fugenlos04.url, alt: "Fugenlose Duschwand in Grüntönen mit LED-Lichtband", category: "Fugenlose Oberflächen" },
   { src: fugenlos06.url, alt: "Fugenlose Wandgestaltung Gäste-WC, warme Naturtöne", category: "Fugenlose Oberflächen" },
 
+  { src: kreativtechnik03.url, alt: "Kreativtechnik Wandgestaltung mit metallischer Struktur und Holzvertäfelung", category: "Kreativtechnik" },
+  { src: kreativtechnik04.url, alt: "Kreativtechnik Goldwand mit reliefartiger Spachteltechnik und indirekter Beleuchtung", category: "Kreativtechnik" },
+
   { src: fassade, alt: "Fassadenanstrich Einfamilienhaus, cremeweiß", category: "Fassade" },
   { src: fassade, alt: "Fassadensanierung, langlebiger Silikatanstrich", category: "Fassade" },
   { src: fassade, alt: "Fassade mit Akzentfarbe, moderne Optik", category: "Fassade" },
