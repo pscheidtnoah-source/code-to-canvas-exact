@@ -168,9 +168,8 @@ function ProjektePage() {
             const overflow = items.length - PREVIEW_COUNT;
             return (
               <div key={cat}>
-                <div className="flex items-baseline gap-3 mb-6">
+                <div className="mb-6">
                   <h2 className="text-2xl sm:text-3xl font-bold text-foreground">{cat}</h2>
-                  <span className="text-sm text-muted-foreground">· {items.length} {items.length === 1 ? "Projekt" : "Projekte"}</span>
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
                   {preview.map((p, i) => {
