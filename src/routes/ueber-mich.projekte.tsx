@@ -18,6 +18,8 @@ import fugenlos04 from "@/assets/fugenlos-04.jpg.asset.json";
 import fugenlos06 from "@/assets/fugenlos-06.jpg.asset.json";
 import kreativtechnik03 from "@/assets/kreativtechnik-03.jpg.asset.json";
 import kreativtechnik04 from "@/assets/kreativtechnik-04.jpg.asset.json";
+import kreativtechnik05 from "@/assets/kreativtechnik-05.png.asset.json";
+import kreativtechnik06 from "@/assets/kreativtechnik-06.png.asset.json";
 
 export const Route = createFileRoute("/ueber-mich/projekte")({
   head: () => ({
@@ -50,6 +52,8 @@ const projects: Project[] = [
 
   { src: kreativtechnik03.url, alt: "Kreativtechnik Wandgestaltung mit metallischer Struktur und Holzvertäfelung", category: "Kreativtechnik" },
   { src: kreativtechnik04.url, alt: "Kreativtechnik Goldwand mit reliefartiger Spachteltechnik und indirekter Beleuchtung", category: "Kreativtechnik" },
+  { src: kreativtechnik05.url, alt: "Kreativtechnik Wandbild mit tropischen Pflanzen und Blüten im Dschungel-Motiv", category: "Kreativtechnik" },
+  { src: kreativtechnik06.url, alt: "Kreativtechnik Tapete mit floralem Muster in Gold- und Blautönen", category: "Kreativtechnik" },
 
   { src: fassade, alt: "Fassadenanstrich Einfamilienhaus, cremeweiß", category: "Fassade" },
   { src: fassade, alt: "Fassadensanierung, langlebiger Silikatanstrich", category: "Fassade" },
