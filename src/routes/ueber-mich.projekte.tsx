@@ -52,6 +52,8 @@ const projects: Project[] = [
 
   { src: kreativtechnik03.url, alt: "Kreativtechnik Wandgestaltung mit metallischer Struktur und Holzvertäfelung", category: "Kreativtechnik" },
   { src: kreativtechnik04.url, alt: "Kreativtechnik Goldwand mit reliefartiger Spachteltechnik und indirekter Beleuchtung", category: "Kreativtechnik" },
+  { src: kreativtechnik05.url, alt: "Kreativtechnik Wandbild mit tropischen Pflanzen und Blüten im Dschungel-Motiv", category: "Kreativtechnik" },
+  { src: kreativtechnik06.url, alt: "Kreativtechnik Tapete mit floralem Muster in Gold- und Blautönen", category: "Kreativtechnik" },
 
   { src: fassade, alt: "Fassadenanstrich Einfamilienhaus, cremeweiß", category: "Fassade" },
   { src: fassade, alt: "Fassadensanierung, langlebiger Silikatanstrich", category: "Fassade" },
