@@ -44,10 +44,10 @@ type Project = { src: string; alt: string; category: Category };
 const projects: Project[] = [
   { src: wohnzimmer, alt: "Innenanstrich Wohnzimmer, warme Wandfarbe", category: "Innenanstrich" },
   { src: wallAfter, alt: "Innenanstrich Wand, sauber gestrichen in Weiß", category: "Innenanstrich" },
-  { src: wallBefore, alt: "Innenanstrich Vorbereitung, Wand vor dem Streichen", category: "Innenanstrich" },
-  { src: hero, alt: "Innenanstrich Flur, moderne Farbgestaltung", category: "Innenanstrich" },
-  { src: wohnzimmer, alt: "Innenanstrich Schlafzimmer, ruhige Farbtöne", category: "Innenanstrich" },
-  { src: wallAfter, alt: "Innenanstrich Küche, hochwertige Latexfarbe", category: "Innenanstrich" },
+  { src: innenanstrich01.url, alt: "Innenanstrich Flur mit Wandgestaltung in warmem Rotbraun und Holzelementen", category: "Innenanstrich" },
+  { src: innenanstrich02.url, alt: "Innenanstrich Treppenhaus in warmem Gelbton mit Strukturputz", category: "Innenanstrich" },
+  { src: innenanstrich03.url, alt: "Innenanstrich Wand in kräftigem Orange mit Kunstwerken", category: "Innenanstrich" },
+  { src: innenanstrich04.url, alt: "Innenanstrich Büro mit Akzentwand in warmem Orange", category: "Innenanstrich" },
 
   { src: fugenlos02.url, alt: "Fugenlose Oberfläche Dusche, mineralischer Spachtelputz in Grau", category: "Fugenlose Oberflächen" },
   { src: fugenlos03.url, alt: "Fugenloses Bad mit Beton-Optik und indirekter Beleuchtung", category: "Fugenlose Oberflächen" },
