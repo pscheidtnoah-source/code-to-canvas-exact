@@ -60,7 +60,7 @@ const projects: Project[] = [
   { src: trockenbau, alt: "Trockenbau abgehängte Decke mit indirekter Beleuchtung", category: "Trockenbau" },
 ];
 
-const categories: Category[] = ["Innenanstrich", "Fugenlose Oberflächen", "Fassade", "Trockenbau"];
+const categories: Category[] = ["Innenanstrich", "Fugenlose Oberflächen", "Kreativtechnik", "Fassade", "Trockenbau"];
 type Filter = "Alle" | Category;
 const filters: Filter[] = ["Alle", ...categories];
 const PREVIEW_COUNT = 4;
