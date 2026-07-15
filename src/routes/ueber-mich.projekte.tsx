@@ -31,7 +31,7 @@ export const Route = createFileRoute("/ueber-mich/projekte")({
   component: ProjektePage,
 });
 
-type Category = "Innenanstrich" | "Fugenlose Oberflächen" | "Fassade" | "Trockenbau";
+type Category = "Innenanstrich" | "Fugenlose Oberflächen" | "Kreativtechnik" | "Fassade" | "Trockenbau";
 
 type Project = { src: string; alt: string; category: Category };
 
