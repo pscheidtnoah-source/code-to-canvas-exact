@@ -20,6 +20,10 @@ import kreativtechnik03 from "@/assets/kreativtechnik-03.jpg.asset.json";
 import kreativtechnik04 from "@/assets/kreativtechnik-04.jpg.asset.json";
 import kreativtechnik05 from "@/assets/kreativtechnik-05.png.asset.json";
 import kreativtechnik06 from "@/assets/kreativtechnik-06.png.asset.json";
+import innenanstrich01 from "@/assets/innenanstrich-01.png.asset.json";
+import innenanstrich02 from "@/assets/innenanstrich-02.png.asset.json";
+import innenanstrich03 from "@/assets/innenanstrich-03.png.asset.json";
+import innenanstrich04 from "@/assets/innenanstrich-04.png.asset.json";
 
 export const Route = createFileRoute("/ueber-mich/projekte")({
   head: () => ({
