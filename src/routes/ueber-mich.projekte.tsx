@@ -42,7 +42,7 @@ type Category = "Innenanstrich" | "Fugenlose Oberflächen" | "Kreativtechnik" | 
 type Project = { src: string; alt: string; category: Category };
 
 const projects: Project[] = [
-  { src: innenanstrich01.url, alt: "Innenanstrich Flur mit Wandgestaltung in warmem Rotbraun und Holzelementen", category: "Innenanstrich" },
+  { src: kreativtechnik06.url, alt: "Innenanstrich Tapete mit floralem Muster in Gold- und Blautönen", category: "Innenanstrich" },
   { src: innenanstrich02.url, alt: "Innenanstrich Treppenhaus in warmem Gelbton mit Strukturputz", category: "Innenanstrich" },
   { src: innenanstrich03.url, alt: "Innenanstrich Wand in kräftigem Orange mit Kunstwerken", category: "Innenanstrich" },
   { src: innenanstrich04.url, alt: "Innenanstrich Büro mit Akzentwand in warmem Orange", category: "Innenanstrich" },
@@ -55,7 +55,7 @@ const projects: Project[] = [
   { src: kreativtechnik03.url, alt: "Kreativtechnik Wandgestaltung mit metallischer Struktur und Holzvertäfelung", category: "Kreativtechnik" },
   { src: kreativtechnik04.url, alt: "Kreativtechnik Goldwand mit reliefartiger Spachteltechnik und indirekter Beleuchtung", category: "Kreativtechnik" },
   { src: kreativtechnik05.url, alt: "Kreativtechnik Wandbild mit tropischen Pflanzen und Blüten im Dschungel-Motiv", category: "Kreativtechnik" },
-  { src: kreativtechnik06.url, alt: "Kreativtechnik Tapete mit floralem Muster in Gold- und Blautönen", category: "Kreativtechnik" },
+  { src: innenanstrich01.url, alt: "Kreativtechnik Flur mit Wandgestaltung in warmem Rotbraun und Holzelementen", category: "Kreativtechnik" },
 
   { src: fassade, alt: "Fassadenanstrich Einfamilienhaus, cremeweiß", category: "Fassade" },
   { src: fassade, alt: "Fassadensanierung, langlebiger Silikatanstrich", category: "Fassade" },
