@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import {
   Phone, ArrowRight, Check, Brush, Sparkles, Square, Layers, Home as HomeIcon, PaintRoller,
-  Frown, Clock, Lightbulb, UserCheck, Sparkle, MapPin, Mail, Star, Quote,
+  Frown, Clock, Lightbulb, UserCheck, Sparkle, MapPin, Mail, Star, Quote, ChevronDown,
 } from "lucide-react";
 import heroImg from "@/assets/hero.png";
 import projWohnzimmer from "@/assets/project-wohnzimmer.jpg";
