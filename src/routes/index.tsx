@@ -439,10 +439,10 @@ function Home() {
                   <div className="text-xs uppercase tracking-wider text-gold">Telefon</div>
                   <div className="mt-1 text-base font-semibold">0157 57475791</div>
                 </a>
-                <a href="mailto:info@malermeister-dmw.de" className="rounded-xl bg-anthracite text-anthracite-foreground p-5 hover:bg-anthracite/90 transition">
+                <a href="mailto:malermeister-dmw@web.de" className="rounded-xl bg-anthracite text-anthracite-foreground p-5 hover:bg-anthracite/90 transition">
                   <Mail className="h-5 w-5 text-gold mb-2" />
                   <div className="text-xs uppercase tracking-wider text-gold">E-Mail</div>
-                  <div className="mt-1 text-sm font-semibold break-all">info@malermeister-dmw.de</div>
+                  <div className="mt-1 text-sm font-semibold break-all">malermeister-dmw@web.de</div>
                 </a>
                 <div className="rounded-xl bg-anthracite text-anthracite-foreground p-5">
                   <MapPin className="h-5 w-5 text-gold mb-2" />
