@@ -11,6 +11,7 @@ type FormData = {
   service: string;
   squareMeters: string;
   rooms: string;
+  urgency: string;
   message: string;
 };
 
@@ -23,6 +24,7 @@ const initial: FormData = {
   service: "",
   squareMeters: "",
   rooms: "",
+  urgency: "",
   message: "",
 };
 
@@ -36,6 +38,13 @@ const services = [
 ];
 
 const salutations = ["Herr", "Frau"];
+
+const urgencies = [
+  "So schnell wie möglich",
+  "Innerhalb der nächsten Wochen",
+  "In den nächsten Monaten",
+  "Zeitlich noch unklar",
+];
 
 type FieldType = "text" | "email" | "tel" | "textarea" | "choice";
 
@@ -82,6 +91,12 @@ const steps: StepDef[] = [
     ],
   },
   {
+    title: "Wie dringend ist Ihr Projekt?",
+    fields: [
+      { key: "urgency", label: "Gewünschter Zeitrahmen", type: "choice", choices: urgencies },
+    ],
+  },
+  {
     title: "Beschreiben Sie Ihr Projekt",
     fields: [
       { key: "message", label: "Projektbeschreibung", placeholder: "Was wünschen Sie sich? Gibt es Besonderheiten?", type: "textarea" },
@@ -125,7 +140,7 @@ export function MultiStepContactForm() {
 
   const submit = () => {
     const body = encodeURIComponent(
-      `Anrede: ${data.salutation}\nVorname: ${data.firstName}\nNachname: ${data.lastName}\nE-Mail: ${data.email}\nTelefon: ${data.phone}\nLeistung: ${data.service}\nFläche: ${data.squareMeters} m²\nRäume: ${data.rooms}\n\n${data.message}`,
+      `Anrede: ${data.salutation}\nVorname: ${data.firstName}\nNachname: ${data.lastName}\nE-Mail: ${data.email}\nTelefon: ${data.phone}\nLeistung: ${data.service}\nFläche: ${data.squareMeters} m²\nRäume: ${data.rooms}\nZeitrahmen: ${data.urgency}\n\n${data.message}`,
     );
     window.location.href = `mailto:malermeister-dmw@web.de?subject=${encodeURIComponent(
       "Anfrage über die Website",
