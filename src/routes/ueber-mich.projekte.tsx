@@ -27,6 +27,9 @@ import innenanstrich04 from "@/assets/innenanstrich-04.png.asset.json";
 import trockenbau01 from "@/assets/trockenbau-01.jpg.asset.json";
 import trockenbau02 from "@/assets/trockenbau-02.jpg.asset.json";
 import trockenbau03 from "@/assets/trockenbau-03.jpg.asset.json";
+import fassade01 from "@/assets/fassade-01.jpg.asset.json";
+import fassade02 from "@/assets/fassade-02.jpg.asset.json";
+import fassade03 from "@/assets/fassade-03.jpg.asset.json";
 
 export const Route = createFileRoute("/ueber-mich/projekte")({
   head: () => ({
@@ -60,9 +63,9 @@ const projects: Project[] = [
   { src: kreativtechnik05.url, alt: "Kreativtechnik Wandbild mit tropischen Pflanzen und Blüten im Dschungel-Motiv", category: "Kreativtechnik" },
   { src: innenanstrich01.url, alt: "Kreativtechnik Flur mit Wandgestaltung in warmem Rotbraun und Holzelementen", category: "Kreativtechnik" },
 
-  { src: fassade, alt: "Fassadenanstrich Einfamilienhaus, cremeweiß", category: "Fassade" },
-  { src: fassade, alt: "Fassadensanierung, langlebiger Silikatanstrich", category: "Fassade" },
-  { src: fassade, alt: "Fassade mit Akzentfarbe, moderne Optik", category: "Fassade" },
+  { src: fassade01.url, alt: "Fassade Nebengebäude in warmem Gelbton mit grauen Sockel- und Türakzenten", category: "Fassade" },
+  { src: fassade02.url, alt: "Sanierte Fachwerkfassade in Gelb mit rotbraunen Balken", category: "Fassade" },
+  { src: fassade03.url, alt: "Fassadendetail in kräftigem Rosé mit Markise vor blauem Himmel", category: "Fassade" },
 
   { src: trockenbau01.url, alt: "Trockenbau abgehängte Decke mit frisch verspachtelten Platten", category: "Trockenbau" },
   { src: trockenbau02.url, alt: "Trockenbau Deckenkonstruktion mit Einbaustrahlern, vorbereitet zum Verspachteln", category: "Trockenbau" },
