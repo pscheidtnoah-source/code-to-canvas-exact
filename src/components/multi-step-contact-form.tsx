@@ -95,6 +95,7 @@ function isFieldValid(field: FieldDef, value: string): boolean {
   if (field.type === "email") return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v);
   if (field.type === "tel") return v.replace(/\D/g, "").length >= 6;
   if (field.type === "choice") return true;
+  if (field.key === "squareMeters" || field.key === "rooms") return /^\d+$/.test(v);
   return v.length >= 2;
 }
 
