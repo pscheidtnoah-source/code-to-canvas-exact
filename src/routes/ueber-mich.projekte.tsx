@@ -24,6 +24,9 @@ import innenanstrich01 from "@/assets/innenanstrich-01.png.asset.json";
 import innenanstrich02 from "@/assets/innenanstrich-02.png.asset.json";
 import innenanstrich03 from "@/assets/innenanstrich-03.png.asset.json";
 import innenanstrich04 from "@/assets/innenanstrich-04.png.asset.json";
+import trockenbau01 from "@/assets/trockenbau-01.jpg.asset.json";
+import trockenbau02 from "@/assets/trockenbau-02.jpg.asset.json";
+import trockenbau03 from "@/assets/trockenbau-03.jpg.asset.json";
 
 export const Route = createFileRoute("/ueber-mich/projekte")({
   head: () => ({
@@ -61,9 +64,9 @@ const projects: Project[] = [
   { src: fassade, alt: "Fassadensanierung, langlebiger Silikatanstrich", category: "Fassade" },
   { src: fassade, alt: "Fassade mit Akzentfarbe, moderne Optik", category: "Fassade" },
 
-  { src: trockenbau, alt: "Trockenbau Deckenkonstruktion, glatt verspachtelt", category: "Trockenbau" },
-  { src: trockenbau, alt: "Trockenbau Wand, sauberer Rohbau", category: "Trockenbau" },
-  { src: trockenbau, alt: "Trockenbau abgehängte Decke mit indirekter Beleuchtung", category: "Trockenbau" },
+  { src: trockenbau01.url, alt: "Trockenbau abgehängte Decke mit frisch verspachtelten Platten", category: "Trockenbau" },
+  { src: trockenbau02.url, alt: "Trockenbau Deckenkonstruktion mit Einbaustrahlern, vorbereitet zum Verspachteln", category: "Trockenbau" },
+  { src: trockenbau03.url, alt: "Trockenbau Wand mit Türöffnung, verspachtelt und geschliffen", category: "Trockenbau" },
 ];
 
 const categories: Category[] = ["Innenanstrich", "Fugenlose Oberflächen", "Kreativtechnik", "Fassade", "Trockenbau"];
