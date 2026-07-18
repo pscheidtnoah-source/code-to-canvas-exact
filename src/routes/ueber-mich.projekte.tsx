@@ -27,6 +27,9 @@ import innenanstrich04 from "@/assets/innenanstrich-04.png.asset.json";
 import trockenbau01 from "@/assets/trockenbau-01.jpg.asset.json";
 import trockenbau02 from "@/assets/trockenbau-02.jpg.asset.json";
 import trockenbau03 from "@/assets/trockenbau-03.jpg.asset.json";
+import fassade01 from "@/assets/fassade-01.jpg.asset.json";
+import fassade02 from "@/assets/fassade-02.jpg.asset.json";
+import fassade03 from "@/assets/fassade-03.jpg.asset.json";
 
 export const Route = createFileRoute("/ueber-mich/projekte")({
   head: () => ({
