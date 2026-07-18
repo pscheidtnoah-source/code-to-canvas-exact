@@ -117,7 +117,7 @@ function ProjektePage() {
 
   return (
     <div className="min-h-screen bg-background">
-      <SiteHeader />
+      <SiteHeader mobileSticky={false} />
 
       {/* HERO */}
       <section className="relative py-24 bg-anthracite border-b border-border">
@@ -138,7 +138,7 @@ function ProjektePage() {
       </section>
 
       {/* FILTER */}
-      <section className="py-10 bg-background border-b border-border sticky top-[73px] z-30 backdrop-blur bg-background/90">
+      <section className="py-10 bg-background border-b border-border lg:sticky lg:top-[73px] z-30 backdrop-blur bg-background/90">
         <div className="container mx-auto px-4">
           <div className="flex flex-wrap justify-center gap-3">
             {filters.map((f) => {
