@@ -2,7 +2,8 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import {
   Phone, ArrowRight, Check, Brush, Sparkles, Square, Layers, Home as HomeIcon, PaintRoller,
-  Frown, Clock, Lightbulb, UserCheck, Sparkle, MapPin, Mail, Star, Quote, ChevronDown,
+  Frown, Clock, Lightbulb, UserCheck, Sparkle, MapPin, Mail, Star, Quote,
+
 } from "lucide-react";
 import heroImg from "@/assets/hero.png";
 import projWohnzimmer from "@/assets/project-wohnzimmer.jpg";
@@ -130,14 +131,6 @@ const problems = [
   { icon: Lightbulb, title: "Fehlende Ideen?", desc: "Sie wissen nicht, welche Farben, Materialien oder Techniken wirklich zu Ihrem Zuhause passen." },
 ];
 
-const references = [
-  { img: kreativAsset, tag: "Kreativtechnik", title: "Akzentwand mit Strukturputz", desc: "Warme Metallic-Optik mit feinem Lichtspiel – ein echter Hingucker im Wohnbereich." },
-  { img: fassadeAsset, tag: "Fassade", title: "Fassadenrenovierung Einfamilienhaus", desc: "Komplettanstrich inkl. Vorarbeiten und Schutzbeschichtung – wetterfest für Jahre." },
-  { img: trockenbauAsset, tag: "Trockenbau", title: "Trockenbau-Ausbau", desc: "Neue Wände und Decken im Rohbau – sauber gespachtelt und streichfertig übergeben." },
-  { img: bodenAsset, tag: "Boden", title: "Bodenverlegung Eiche-Optik", desc: "Designboden in warmer Holzoptik – millimetergenau verlegt, inkl. Sockelleisten." },
-  { img: wallAfter, tag: "Innenanstrich", title: "Wohnraum-Anstrich", desc: "Frische Wandfarbe in warmem Beige – ein neues Wohngefühl an einem Wochenende." },
-  { img: projWohnzimmer, tag: "Spachteltechnik", title: "Wohnzimmer in Betonoptik", desc: "Edle Spachteltechnik mit sanften Verläufen – modern und zeitlos zugleich." },
-];
 
 const steps = [
   { n: "01", icon: Phone, title: "Kontakt aufnehmen", desc: "Per Telefon oder E-Mail – wir melden uns innerhalb von 24 Stunden zurück." },
@@ -172,51 +165,6 @@ const testimonials = [
     text: "Herr Wöhner hat perfekte Arbeit geleistet, sehr sauber und genau – was die Vorbereitung und die Ausführung angeht. Wir können Herrn Wöhner nur weiterempfehlen." },
 ];
 
-function ProjectsToggle() {
-  const [showProjects, setShowProjects] = useState(false);
-
-  return (
-    <div>
-      <div className="flex justify-center">
-        <button
-          onClick={() => setShowProjects((s) => !s)}
-          className="inline-flex flex-col items-center gap-1 rounded-md border border-input bg-card px-6 py-3 text-sm font-semibold text-foreground hover:bg-secondary transition"
-          aria-expanded={showProjects}
-          aria-controls="projects-grid"
-        >
-          {showProjects ? "Projekte ausblenden" : "Projekte anzeigen"}
-          <ChevronDown className={`h-4 w-4 transition-transform duration-300 ${showProjects ? "rotate-180" : ""}`} />
-        </button>
-      </div>
-
-      {showProjects && (
-        <div id="projects-grid" className="mt-10 space-y-10 animate-in fade-in slide-in-from-top-4 duration-500">
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {references.map((r, i) => (
-              <ScrollReveal key={r.title} delay={i * 100}>
-                <div className="group rounded-xl border border-border bg-card overflow-hidden hover:border-gold/60 hover:shadow-xl transition-all h-full">
-                  <div className="aspect-[4/3] overflow-hidden bg-secondary">
-                    <img src={r.img} alt={r.title} loading="lazy" className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
-                  </div>
-                  <div className="p-6">
-                    <div className="text-xs font-semibold uppercase tracking-[0.15em] text-gold">{r.tag}</div>
-                    <h3 className="mt-2 text-xl font-semibold text-foreground">{r.title}</h3>
-                    <p className="mt-2 text-muted-foreground leading-relaxed">{r.desc}</p>
-                  </div>
-                </div>
-              </ScrollReveal>
-            ))}
-          </div>
-          <div className="flex justify-center">
-            <a href="/ueber-mich/projekte" className="inline-flex items-center gap-2 rounded-md border border-input bg-card px-6 py-3 text-sm font-semibold text-foreground hover:bg-secondary transition">
-              Alle Projekte ansehen <ArrowRight className="h-4 w-4" />
-            </a>
-          </div>
-        </div>
-      )}
-    </div>
-  );
-}
 
 function Home() {
   return (
@@ -336,23 +284,8 @@ function Home() {
         </div>
       </section>
 
-      {/* REFERENCES */}
-      <section id="referenzen" className="py-24 bg-secondary/40">
-        <div className="container mx-auto px-4">
-          <ScrollReveal className="max-w-3xl mb-8">
-            <div className="text-xs font-semibold uppercase tracking-[0.2em] text-gold">Referenzen</div>
-            <h2 className="mt-3 text-4xl sm:text-5xl font-bold text-foreground">Ausgewählte Projekte.</h2>
-            <p className="mt-4 text-muted-foreground text-lg">Ein Einblick in unsere Arbeit – von der Akzentwand bis zur Fassade.</p>
-          </ScrollReveal>
-
-          <ProjectsToggle />
-        </div>
-      </section>
-
-
-
-
       {/* PROCESS TIMELINE */}
+
       <section id="ueber" className="py-24 bg-secondary/40">
         <div className="container mx-auto px-4">
           <ScrollReveal className="max-w-3xl mb-16">
