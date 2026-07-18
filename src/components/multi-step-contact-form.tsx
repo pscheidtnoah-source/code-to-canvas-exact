@@ -126,7 +126,7 @@ export function MultiStepContactForm() {
     const body = encodeURIComponent(
       `Anrede: ${data.salutation}\nVorname: ${data.firstName}\nNachname: ${data.lastName}\nE-Mail: ${data.email}\nTelefon: ${data.phone}\nLeistung: ${data.service}\nFläche: ${data.squareMeters} m²\nRäume: ${data.rooms}\n\n${data.message}`,
     );
-    window.location.href = `mailto:info@malermeister-dmw.de?subject=${encodeURIComponent(
+    window.location.href = `mailto:malermeister-dmw@web.de?subject=${encodeURIComponent(
       "Anfrage über die Website",
     )}&body=${body}`;
     setDone(true);
