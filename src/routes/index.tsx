@@ -284,23 +284,8 @@ function Home() {
         </div>
       </section>
 
-      {/* REFERENCES */}
-      <section id="referenzen" className="py-24 bg-secondary/40">
-        <div className="container mx-auto px-4">
-          <ScrollReveal className="max-w-3xl mb-8">
-            <div className="text-xs font-semibold uppercase tracking-[0.2em] text-gold">Referenzen</div>
-            <h2 className="mt-3 text-4xl sm:text-5xl font-bold text-foreground">Ausgewählte Projekte.</h2>
-            <p className="mt-4 text-muted-foreground text-lg">Ein Einblick in unsere Arbeit – von der Akzentwand bis zur Fassade.</p>
-          </ScrollReveal>
-
-          <ProjectsToggle />
-        </div>
-      </section>
-
-
-
-
       {/* PROCESS TIMELINE */}
+
       <section id="ueber" className="py-24 bg-secondary/40">
         <div className="container mx-auto px-4">
           <ScrollReveal className="max-w-3xl mb-16">
