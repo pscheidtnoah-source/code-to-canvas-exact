@@ -117,7 +117,7 @@ function ProjektePage() {
 
   return (
     <div className="min-h-screen bg-background">
-      <SiteHeader />
+      <SiteHeader mobileSticky={false} />
 
       {/* HERO */}
       <section className="relative py-24 bg-anthracite border-b border-border">
