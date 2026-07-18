@@ -28,11 +28,15 @@ const navItems: NavItem[] = [
   { label: "Kontakt", href: "/#kontakt" },
 ];
 
-export function SiteHeader() {
+type SiteHeaderProps = {
+  mobileSticky?: boolean;
+};
+
+export function SiteHeader({ mobileSticky = true }: SiteHeaderProps) {
   const [open, setOpen] = useState(false);
   const [mobileSub, setMobileSub] = useState<string | null>(null);
   return (
-    <header className="sticky top-0 z-50 w-full">
+    <header className={`top-0 z-50 w-full ${mobileSticky ? "sticky" : "relative lg:sticky"}`}>
       {/* Main nav */}
       <div className="bg-background/95 backdrop-blur border-b border-border">
         <div className="container mx-auto flex items-center justify-between px-4 py-4">
