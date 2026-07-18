@@ -177,14 +177,14 @@ function ProjektePage() {
                 <div className="mb-6">
                   <h2 className="text-2xl sm:text-3xl font-bold text-foreground">{cat}</h2>
                 </div>
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                <div className="flex flex-wrap justify-center gap-4">
                   {preview.map((p, i) => {
                     const isLast = i === preview.length - 1 && overflow > 0;
                     return (
                       <button
                         key={i}
                         onClick={() => openLightbox(items, i)}
-                        className="group relative aspect-square overflow-hidden rounded-xl bg-secondary focus:outline-none focus:ring-2 focus:ring-gold"
+                        className="group relative w-full sm:w-[calc(50%-0.5rem)] lg:w-[calc(25%-0.75rem)] aspect-square overflow-hidden rounded-xl bg-secondary focus:outline-none focus:ring-2 focus:ring-gold"
                       >
                         <img
                           src={p.src}
