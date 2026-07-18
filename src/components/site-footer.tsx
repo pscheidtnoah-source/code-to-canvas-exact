@@ -37,7 +37,7 @@ export function SiteFooter() {
 
         <div>
           <h4 className="font-display text-sm font-semibold uppercase tracking-wider text-gold mb-4">Folgen Sie uns</h4>
-          <a href="https://instagram.com/malermeister_dmw" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-sm text-anthracite-foreground/80 hover:text-gold">
+          <a href="https://www.instagram.com/malermeister_dmw?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-sm text-anthracite-foreground/80 hover:text-gold">
             <Instagram className="h-5 w-5" /> @malermeister_dmw
           </a>
           <div className="mt-6 space-y-2 text-sm">
