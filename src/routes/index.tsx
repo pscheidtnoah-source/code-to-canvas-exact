@@ -24,10 +24,10 @@ import { ScrollReveal } from "@/components/scroll-reveal";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Malermeister DMW – Maler in Fürth | Wandgestaltung, Fassade & Trockenbau" },
-      { name: "description", content: "Ihr Malermeister in Fürth: Innenanstriche, Fassaden, Trockenbau, Bodenverlegung & Kreativtechniken. Über 10 Jahre Erfahrung, 500+ Projekte." },
-      { property: "og:title", content: "Malermeister DMW – Maler in Fürth" },
-      { property: "og:description", content: "Farbe. Design. Wohlgefühl. Hochwertige Malerarbeiten in Fürth & Umgebung." },
+      { title: "Malermeister DMW" },
+      { name: "description", content: "Pixel Perfect Clone replicates websites with exact fidelity, creating 1:1 visual duplicates." },
+      { property: "og:title", content: "Malermeister DMW" },
+      { property: "og:description", content: "Pixel Perfect Clone replicates websites with exact fidelity, creating 1:1 visual duplicates." },
     ],
   }),
   component: Home,
