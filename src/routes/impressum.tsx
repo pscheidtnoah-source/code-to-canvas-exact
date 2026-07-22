@@ -6,7 +6,7 @@ export const Route = createFileRoute("/impressum")({
   head: () => ({
     meta: [
       { title: "Impressum – Malermeister DMW" },
-      { name: "description", content: "Impressum von Malermeister DMW, Inhaber Dominik Wöhner, Fürth." },
+      { name: "description", content: "Impressum von Malermeister DMW, Inhaber Dominik Mike Wöhner, Fürth." },
     ],
   }),
   component: Impressum,
@@ -22,22 +22,34 @@ function Impressum() {
           <section>
             <h2 className="font-display text-xl font-semibold text-foreground">Angaben gemäß § 5 TMG:</h2>
             <div className="mt-4 space-y-1">
-              <p>[VORNAME, NACHNAME]</p>
-              <p>[ADRESSE]</p>
-              <p>[PLZ, ORT]</p>
+              <p>Dominik Mike Wöhner</p>
+              <p>Malermeister DMW</p>
+              <p>Würzburger Straße 554</p>
+              <p>90768 Fürth</p>
             </div>
             <div className="mt-4 space-y-1">
-              <p>[KONTAKT/INFO:]</p>
-              <p>Telefon: [TELEFONNUMMER]</p>
-              <p>Fax: [FAXNUMMER]</p>
-              <p>E-Mail: [E-MAIL-ADRESSE]</p>
+              <p className="font-semibold text-foreground">Kontakt:</p>
+              <p>Tel: <a href="tel:015757475791" className="hover:text-gold">015757475791</a></p>
+              <p>E-Mail: <a href="mailto:Malermeister-DMW@Web.de" className="hover:text-gold break-all">Malermeister-DMW@Web.de</a></p>
             </div>
           </section>
 
           <section>
-            <h2 className="font-display text-xl font-semibold text-foreground">[Umsatzsteuer-ID]</h2>
+            <h2 className="font-display text-xl font-semibold text-foreground">Umsatzsteuer-ID</h2>
             <p className="mt-3">Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz:</p>
-            <p className="mt-1 text-muted-foreground">[DE XXX XXX XXX]</p>
+            <p className="mt-1 text-muted-foreground">DE458481211</p>
+          </section>
+
+          <section>
+            <h2 className="font-display text-xl font-semibold text-foreground">Aufsichtsbehörde</h2>
+            <p className="mt-3">Finanzamt Fürth</p>
+          </section>
+
+          <section>
+            <h2 className="font-display text-xl font-semibold text-foreground">Verbraucherstreitbeilegung / Universalschlichtungsstelle</h2>
+            <p className="mt-3">
+              Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.
+            </p>
           </section>
 
           <section>
